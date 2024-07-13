@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="card_details_css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="image">
+        <div class="main-div" id="main_div" style="display: block;">
+            <div class="form_manage">
+                <div class="billingaddress">
+                    <h2 class="billingaddress_heading">Billing Address</h2>
+                    <form>
+                        <h3>Full Name :</h3>
+                        <input type="text" placeholder="Enter Name" id="username" required>
+                        <h3>Email :</h3>
+                        <input type="email" placeholder="email@example.com" id="email" required>
+                        <h3>Address :</h3>
+                        <input type="text" placeholder="room - street - locality - city" id="user_address" required>
+                        <h3>State :</h3>
+                        <input type="text" placeholder="Rajasthan" id="state" required>
+                        <div class="small_entry">
+                            <h3>Country :</h3>
+                            <h3>Pin code :</h3>
+                        </div>
+                        <div class="small_entry_form">
+                            <input type="text" placeholder="India" id="country" required>
+                            <input type="number" placeholder="101010" id="pin" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="paymentaccepted">
+                    <h2>Payment</h2>
+                    <h3>Cards Accepted :</h3>
+                    <img src="payment_images/paymentlogo.jpeg">
+                    <form>
+                        <h3>Name On Card :</h3>
+                        <input type="text" placeholder="Enter Name" id="card_name" required>
+                        <h3>Credit Card Number :</h3>
+                        <input type="number" placeholder="1111-2222-3333-4444" id="card_number" required>
+                        <h3>Exp Month :</h3>
+                        <input type="text" placeholder="January" id="month" required>
+                        <div class="small_entry payment_smallentry">
+                            <h3>Exp Year :</h3>
+                            <h3>CVV :</h3>
+                        </div>
+                        <div class="small_entry_form paymentaccepted_smallentry">
+                            <input type="text" placeholder="20xx" id="year" required>
+                            <input type="number" placeholder="1010" id="cvv" required>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <button class="continue_payment" onclick="complete_payment()">
+                Complete Transaction
+            </button>
+        </div>
+        
+        <div class="after_btn_click" style="display: none;" id="after_btn_click">
+            <div class="error">
+                <i class="fa-regular fa-face-frown"></i>
+            </div>
+            <div class="errormsg">
+                Transaction Failed<br>
+                An Unexpected Error Occured!!
+            </div>
+        </div>
+    </div>
+
+    <script src="formscript.js"></script>
+</body>
+
+</html>

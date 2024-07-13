@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url(mainimages/about_backgroung.jpeg);
+    background-size: cover;
+}
+ 
+.about_image{
+    position:absolute;
+    top: 20%;
+    left: 30%;
+    color: rgb(63, 27, 27);
+    background-color: rgb(227, 208, 208);
+    font-size: 28px;
+    line-height: 42px;
+    word-spacing: 8px;
+    width: 40%;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+h2{
+    color: rgb(194, 128, 3);
+    text-align: center;
+}
+
+a{
+    font-size: 20px;
+    word-spacing: 2px;
+    text-decoration: none;
+}
+
+.fa-arrow-left{
+    color: white;
+    font-size: larger;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+@media screen and (max-width: 1000px)
+{
+    .about_image{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    .about_image{
+        top: 20%;
+        left: 15%;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .about_image{
+        top: 20%;
+        left: 10%;
+        width: 70%;
+        font-size: 25px;
+        word-spacing: 2px;
+    }
+    
+}
+
+@media screen and (max-width: 500px)
+{
+    .about_image{
+        top: 20%;
+        left: 10%;
+        width: 70%;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    
+}

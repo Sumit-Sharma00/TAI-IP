@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minatofigure</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="productstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- cart menu -->
+    <div class="cart-menu" id="cart_menu" style="display: none;">
+        <div class="menu-cart">
+            <div class="cart-name">
+                <h2>
+                    <center>Shopping Cart</center>
+                </h2>
+                <br>
+            </div>
+
+            <div class="item-cart">
+                <div class="cart-fill" id="cart-1" style="display: none;">
+                    <div class="image">
+                        <img src="mainimages/minatofigure.jpeg">
+                    </div>
+                    <div class="name">
+                        Minato figure
+                    </div>
+                    <div class="ttlprc" value="3099">
+                        ₹3099
+                    </div>
+                    <div class="qty">
+                        <input type="number" value="0" id="pro-qty-cart1" min="0" disabled>
+                    </div>
+                </div>
+
+                <div class="cart-fill" id="cart-2" style="display: none;">
+                    <div class="image">
+                        <img src="mainimages/sasuke.jpeg">
+                    </div>
+                    <div class="name">
+                        Anime Sasuke T-Shirt
+                    </div>
+                    <div class="ttlprc" value="799">
+                        ₹799
+                    </div>
+                    <div class="qty">
+                        <input type="number" value="0" id="pro-qty-cart2" min="0" disabled>
+                    </div>
+                </div>
+
+                <div class="cart-fill" id="cart-3" style="display: none;">
+                    <div class="image">
+                        <img src="mainimages/narutomanga.jpeg">
+                    </div>
+                    <div class="name">
+                        Naruto Manga Vol 1
+                    </div>
+                    <div class="ttlprc" value="2499">
+                        ₹2499
+                    </div>
+                    <div class="qty">
+                        <input type="number" value="0" id="pro-qty-cart3" min="0" disabled>
+                    </div>
+                </div>
+
+                <div class="cart-fill" id="cart-4" style="display: none;">
+                    <div class="image">
+                        <img src="mainimages/jjk.avif">
+                    </div>
+                    <div class="name">
+                        Gojo Satoru T-Shirt
+                    </div>
+                    <div class="ttlprc" value="999">
+                        ₹999
+                    </div>
+                    <div class="qty">
+                        <input type="number" value="0" id="pro-qty-cart4" min="0" disabled>
+                    </div>
+                </div>
+
+                <div class="cart-fill" id="cart-5" style="display: none;">
+                    <div class="image">
+                        <img src="mainimages/cuteanime.jpg">
+                    </div>
+                    <div class="name">
+                        Cute Anime T-Shirt
+                    </div>
+                    <div class="ttlprc" value="999">
+                        ₹999
+                    </div>
+                    <div class="qty">
+                        <input type="number" value="0" id="pro-qty-cart5" min="0" disabled>
+                    </div>
+                </div>
+
+                <div class="cart-fill" id="cart-6" style="display: none;">
+                    <div class="image">
+                        <img src="mainimages/onepiece.jpg">
+                    </div>
+                    <div class="name">
+                        One Piece volume 1
+                    </div>
+                    <div class="ttlprc" value="1799">
+                        ₹1799
+                    </div>
+                    <div class="qty">
+                        <input type="number" value="0" id="pro-qty-cart6" min="0" disabled>
+                    </div>
+                </div>
+
+                <div class="cart-fill" id="cart-7" style="display: none;">
+                    <div class="image">
+                        <img src="mainimages/luffyfigure.jpg">
+                    </div>
+                    <div class="name">
+                        luffy figure
+                    </div>
+                    <div class="ttlprc" value="2999">
+                        ₹2999
+                    </div>
+                    <div class="qty">
+                        <input type="number" value="0" id="pro-qty-cart7" min="0" disabled>
+                    </div>
+                </div>
+
+                <div class="cart-fill" id="cart-8" style="display: none;">
+                    <div class="image">
+                        <img src="mainimages/dragonballZ.jpeg">
+                    </div>
+                    <div class="name">
+                        Dragonball Z Manga Vol 1
+                    </div>
+                    <div class="ttlprc" value="1899">
+                        ₹1899
+                    </div>
+                    <div class="qty">
+                        <input type="number" value="0" id="pro-qty-cart8" min="0" disabled>
+                    </div>
+                </div>
+
+                <div class="cart-fill" id="cart-9" style="display: none;">
+                    <div class="image">
+                        <img src="mainimages/manga.jpg">
+                    </div>
+                    <div class="name">
+                        Anime Manga T-Shirt
+                    </div>
+                    <div class="ttlprc" value="899">
+                        ₹899
+                    </div>
+                    <div class="qty">
+                        <input type="number" value="0" id="pro-qty-cart9" min="0" disabled>
+                    </div>
+                </div>
+
+                <div class="cart-fill" id="cart-10" style="display: none;">
+                    <div class="image">
+                        <img src="mainimages/demonslayer.jpg">
+                    </div>
+                    <div class="name">
+                        Demon Slayer Manga Vol 1
+                    </div>
+                    <div class="ttlprc" value="2999">
+                        ₹2999
+                    </div>
+                    <div class="qty">
+                        <input type="number" value="0" id="pro-qty-cart10" min="0" disabled>
+                    </div>
+                </div>
+
+                <div class="cart-fill" id="cart-11" style="display: none;">
+                    <div class="image">
+                        <img src="mainimages/giyutomioka.jpeg">
+                    </div>
+                    <div class="name">
+                        Giyu Tomika Figure
+                    </div>
+                    <div class="ttlprc" value="3499">
+                        ₹3499
+                    </div>
+                    <div class="qty">
+                        <input type="number" value="0" id="pro-qty-cart11" min="0" disabled>
+                    </div>
+                </div>
+
+                <div class="cart-fill" id="cart-12" style="display: none;">
+                    <div class="image">
+                        <img src="mainimages/firstlove.webp">
+                    </div>
+                    <div class="name">
+                        First Love Manga
+                    </div>
+                    <div class="ttlprc" value="1499">
+                        ₹1499
+                    </div>
+                    <div class="qty">
+                        <input type="number" value="0" id="pro-qty-cart12" min="0" disabled>
+                    </div>
+                </div>
+
+                <div class="cart-fill" id="cart-13" style="display: none;">
+                    <div class="image">
+                        <img src="mainimages/pokemonjpeg.jpeg">
+                    </div>
+                    <div class="name">
+                        Pokemon T-Shirt
+                    </div>
+                    <div class="ttlprc" value="599">
+                        ₹599
+                    </div>
+                    <div class="qty">
+                        <input type="number" value="0" id="pro-qty-cart13" min="0" disabled>
+                    </div>
+                </div>
+
+                <div class="cart-fill" id="cart-14" style="display: none;">
+                    <div class="image">
+                        <img src="mainimages/narutofigure.jpg">
+                    </div>
+                    <div class="name">
+                        Naruto Figure
+                    </div>
+                    <div class="ttlprc" value="3499">
+                        ₹3499
+                    </div>
+                    <div class="qty">
+                        <input type="number" value="0" id="pro-qty-cart14" min="0" disabled>
+                    </div>
+                </div>
+
+                <div class="cart-fill" id="cart-15" style="display: none;">
+                    <div class="image">
+                        <img src="mainimages/springnight.jpeg">
+                    </div>
+                    <div class="name">
+                        Spring Night Manga
+                    </div>
+                    <div class="ttlprc" value="1299">
+                        ₹1299
+                    </div>
+                    <div class="qty">
+                        <input type="number" value="0" id="pro-qty-cart15" min="0" disabled>
+                    </div>
+                </div>
+
+                <div class="cart-fill" id="cart-16" style="display: none;">
+                    <div class="image">
+                        <img src="mainimages/demonshirt.webp">
+                    </div>
+                    <div class="name">
+                        Demon Slayer T-Shirt
+                    </div>
+                    <div class="ttlprc" value="899">
+                        ₹899
+                    </div>
+                    <div class="qty">
+                        <input type="number" value="0" id="pro-qty-cart16" min="0" disabled>
+                    </div>
+                </div>
+
+
+            </div>
+
+            
+        </div>
+
+        <div class="ttl-prc">
+            <div class="wanna-buy">
+                <h2>Buy Now</h2>
+            </div>
+            <div class="prc"><input type="number" id="number" disabled></div>
+        </div>
+
+        <div class="cart-menu-options">
+            <button class="buy buy-menu" value="buy" onclick="gotolink()">Buy Now</button>
+            <button class="cancle buy-menu" value="cancel" onclick="showcart()">Cancel</button>
+        </div>
+
+    </div>
+
+    <div class="navbar">
+
+        <div id="login_form"><div id="Signup_form"><div id="within_body"></div></div></div>
+
+        <div class="house">
+            <a href="index.html"> <i class="fa-solid fa-house"></i></a>
+        </div>
+
+        <div class="logo">
+            <a href="#"><i class="fa-solid fa-cat"></i>Animeclo</a>
+        </div>
+
+
+        <div class="search_bar search_bar_about">
+            <button class="aboutwebsite"><a href="about.html">About</button></a>
+        </div>
+        <div class="search_bar search_bar_contact">
+            <button class="contact"><a href="mailto:neworigami8@gmail.com">Contact</button></a>
+        </div>
+        <div class="search_bar search_bar_shop">
+            <button class="shop"><a href="index.html">Shop</button></a>
+        </div>
+        
+
+        <div class="heading"><h1 class="heading">Naruto Manga</h1></div>
+
+        <div class="accounts">
+            <div class="cart" onclick="showcart()">
+                <button class="cartbtn"><i class="fa-solid fa-cart-shopping"></i>Cart&nbsp<span id="items-in-cart"
+                        value="0">0</span></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="maincontent">
+        <div class="imaging">
+            <img src="mainimages/narutomanga.jpeg">
+        </div>
+        <div class="imagedesc">
+            <h1>Naruto Animation Naruto Manga Volume 1 [papaerback]</h1><br>
+            <div class="pricing">
+                <div class="mrp">
+                    ₹ 2499/-
+                </div>
+                <div class="qnty">
+                    <span>Qty </span><input type="number" id="prdt_qty" value="1">
+                </div>
+                <div class="add_cart_options">
+                    <button class="cart-add" id="box-add" onclick="addedtocart3()">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="availability">
+                <h3>Availabilty :- </h3>
+                <h3 class="instock"> In stock!</h3>
+            </div>
+        </div>
+    </div>
+    
+    <h3>Related Products</h3>
+    <div class="main_items">
+        <div class="card books" style="width: 250px;">
+            <img src="mainimages/demonslayer.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Demon Slayer Manga Vol 1</h5>
+                <p class="card-text"><ul style="list-style: none;">
+                    <li>(pack of 1)</li>
+                    <li class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <p>(62 customers rated)</p>
+                    </li>
+                    <li>
+                        <h4 class="price">2999/-</h4>
+                    </li>
+                </ul></p>
+                <a href="item10.html" class="btn btn-primary">Show More</a>
+            </div>
+        </div>
+        <div class="card figures" style="width: 250px;">
+            <img src="mainimages/giyutomioka.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Giyu Tomika Figure</h5>
+                <p class="card-text"><ul style="list-style: none;">
+                    <li>(pack of 1)</li>
+                    <li class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-regular fa-star-half-stroke"></i>
+                        <p>(18 customers rated)</p>
+                    </li>
+                    <li>
+                        <h4 class="price">3499/-</h4>
+                    </li>
+                </ul></p>
+                <a href="item11.html" class="btn btn-primary">Show More</a>
+            </div>
+        </div>
+        <div class="card books" style="width: 250px;">
+            <img src="mainimages/firstlove.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">First Love Manga</h5>
+                <p class="card-text"><ul style="list-style: none;">
+                    <li>(pack of 1)</li>
+                    <li class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <p>(23 customers rated)</p>
+                    </li>
+                    <li>
+                        <h4 class="price">1499/-</h4>
+                    </li>
+                </ul></p>
+                <a href="item12.html" class="btn btn-primary">Show More</a>
+            </div>
+        </div>
+        <div class="card clothes" style="width: 250px;">
+            <img src="mainimages/pokemonjpeg.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Pokemon T-Shirt</h5>
+                <p class="card-text"><ul style="list-style: none;">
+                    <li>(pack of 1)</li>
+                    <li class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <p>(92 customers rated)</p>
+                    </li>
+                    <li>
+                        <h4 class="price">599/-</h4>
+                    </li>
+                </ul></p>
+                <a href="item13.html" class="btn btn-primary">Show More</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="reviews">
+        <span>Reviews:-</span>
+        <div class="firstreview">
+            <div class="userlogo"><i class="fa-solid fa-circle-user"></i></div>
+            <div class="comment">
+                <div class="cust_name">Nirmala Reviewed</div>
+                <div class="views">This anime manga is an absolute gem! The characters are so well-developed and the captivating plot keeps you on the edge of your seat.</div>
+                <div class="review_stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            </div>
+        </div>
+
+        <div class="firstreview">
+            <div class="userlogo"><i class="fa-solid fa-circle-user"></i></div>
+            <div class="comment">
+                <div class="cust_name">Tambi Thakur Reviewed</div>
+                <div class="views">The artwork is absolutely stunning and helps bring the story to life in a way that truly immerses you in the world of the anime.</div>
+                <div class="review_stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            </div>
+        </div>
+
+        <div class="firstreview">
+            <div class="userlogo"><i class="fa-solid fa-circle-user"></i></div>
+            <div class="comment">
+                <div class="cust_name">Aryan Reviewed</div>
+                <div class="views">I couldn't put it down once I started reading and I can't wait to dive back in for a re-read. A must-have for any anime fan!</div>
+                <div class="review_stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Copyright <i class="fa-regular fa-copyright"></i> 2024 Sumit Policy, All Rights Reserved. Use of this site
+        constitutes acceptance of our terms of policy and Do Not Sell or Share My personal Information.<br><br>
+        <div class="extras">
+            <div class="close">
+                <ul>
+                    <li>
+                        <h6>FAQ</h6>
+                    </li><br>
+                    <li>
+                        <h6>Investor Relations</h6>
+                    </li><br>
+                    <li>
+                        <h6>Privacy Policy</h6>
+                    </li><br>
+                </ul>
+            </div>
+
+            <div class="close">
+                <ul>
+                    <li>
+                        <h6>Help Centre</h6>
+                    </li><br>
+                    <li>
+                        <h6>Cookies Preference</h6>
+                    </li><br>
+                    <li>
+                        <h6>Legal Notice</h6>
+                    </li><br>
+                </ul>
+            </div>
+
+            <div class="close">
+                <ul>
+                    <li>
+                        <h6>Account</h6>
+                    </li><br>
+                    <li>
+                        <h6>Corporate information</h6>
+                    </li><br>
+                    <li>
+                        <h6>only on AnimeClo</h6>
+                    </li><br>
+                </ul>
+            </div>
+
+            <div class="close">
+                <ul>
+                    <li>
+                        <h6>Media Centre</h6>
+                    </li><br>
+                    <li>
+                        <h6>Terms of Use </h6>
+                    </li><br>
+                    <li>
+                        <h6>Contact Us</h6>
+                    </li><br>
+                </ul>
+            </div>
+        </div>
+
+        <div class="endl">
+            <a href="#"><i class="fa-solid fa-cat"></i>AnimeClo</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

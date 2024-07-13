@@ -1,0 +1,193 @@
+h2{
+    font-size: x-large;
+    margin-top: 0;
+}
+
+h3{
+    font-size: medium;
+    margin-top: 0;
+}
+
+body{
+    background: url("payment_images/backgroung.jpeg");
+    background-size: cover; 
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.main-div{
+    height: 85%;
+    width: 45%;
+    background-color: #89CFF0;
+    position: absolute;
+    bottom: 10%;
+    right: 25%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.form_manage{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.billingaddress{
+    position: relative;
+    width: 45%;
+    padding-left: 15px;
+}
+
+
+input{
+    height: 25px;
+    padding-left: 8px;
+    width: 90%;
+    margin-bottom: 16px;
+}
+
+.small_entry{
+    display: flex;
+    align-items: center;
+}
+
+.small_entry h3{
+    margin-right: 20%;
+}
+
+.small_entry_form{
+    display: flex;
+    align-items: center;
+}
+
+.small_entry_form input{
+    width: 25%;
+    margin-right: 15%;
+}
+
+
+.paymentaccepted{
+    position: relative;
+    width: 45%;
+}
+
+.paymentaccepted img{
+    width: 80%;
+    margin-bottom: 16px;
+}
+
+.paymentaccepted_smallentry{
+    width: 100%;
+}
+
+.payment_smallentry h3{
+    margin-right: 22%;
+}
+
+.paymentaccepted_smallentry input{
+    width: 25%;
+    margin-right: 20%;
+}
+
+.continue_payment{
+    border: none;
+    margin-left: 5%;
+    width: 90%;
+    height: 40px;
+    background-color: green;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.continue_payment:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.after_btn_click{
+    background-color: white;
+    width: 30%;
+    height: 30%;
+    padding-top: 30px;
+    position: absolute;
+    bottom: 50%;
+    right: 32%;
+    text-align: center;
+    border-radius: 25px;
+    animation: show 1s ease-in-out 1  normal;
+}
+
+@keyframes show {
+    from{
+        scale: 0;
+        opacity: 0;
+    }
+}
+
+.error{
+    font-size: 90px;
+    color: red;
+}
+
+.errormsg{
+    font-size: 20px;
+    color: rgb(154, 3, 3);
+}
+
+@media screen and (max-width: 1300px)
+{
+    .main-div{
+        height: 75%;
+    }
+}
+
+@media screen and (max-width: 900px)
+{
+    .main-div{
+        height: 75%;
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    .main-div{
+        right: 15%;
+        height: 75%;
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .main-div{
+        right: 15%;
+        height: 75%;
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .main-div{
+        right: 5%;
+        height: 85%;
+        width: 90%;
+        bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .main-div{
+        right: 0;
+        height: 90%;
+        width: 100%;
+        bottom: 5px;
+        top: 10px;
+    }
+}
