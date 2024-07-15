@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="logo"><a href="#"><img src="smimages/logo.png"></a> 
+        </div>
+        <div class="search">
+            <div class="magnify">
+                <img src="smimages/search.png" onclick="addToRecentSearch()">
+                <input type="text" placeholder="Search Here" id="searched_item" onkeypress="addToRecentSearch()">
+            </div>
+        </div>
+        <div class="centre-items-navbar">
+            <ul>
+                <li><a class="home_anchor" onclick="showhome()"><img src="smimages/home.jpg"> <h3>Home</h3></a></li>
+                <li><a class="add_anchor" onclick="addpost()"><img src="smimages/add.png"> <h3>Add post</h3></a></li>
+                <li><a class="group_anchor" onclick="showgroup()"><img src="smimages/group.jpg"><h3>Groups</h3></a></li>
+                <li><a class="message_anchor" onclick="showmessage()"><img src="smimages/message.png"> <h3>Message</h3></a></li>
+            </ul>
+        </div>
+        <div class="user_online">
+            <div class="user-image">
+                <a id="user_image" onclick="showProfileOptions()" style="cursor: pointer;">
+                    <img src="smimages/passportphoto.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- goto profile -->
+    <div class="profile_options" id="profile_options" style="display: none;">
+        <ul>
+            <li><a href="profile.html"><img src="smimages/passportphoto.png"><h3>Go To Profile</h3></a></li>
+            <li><a href="profile.html"><img src="smimages/manage.png" style="margin-left: -11px;"><h3>Manage</h3></a></li>
+            <li><a onclick="showLoader()"><img src="smimages/logout.webp" style="margin-left: -11px;"><h3>Log Out</h3></a></li>
+        </ul>
+    </div>
+
+    <!-- mian content -->
+     <div class="mian-content">
+        <!-- left-side -->
+        <div class="left-side" id="left_side">
+            <div class="header">
+                <img src="smimages/headimg.jpeg" alt="" class="img">
+                <hr style="height: 5px;">
+                <div class="profile-image">
+                    <a href="profile.html">
+                        <img src="smimages/passportphoto.png" alt="">
+                    </a>
+                    <div class="textAboutProfile" style="cursor: default;">
+                        <h2>Nobita Sharma</h2>
+                        <h3>Content Creator</h3>
+                    </div>
+                </div>
+                <hr style="height: 5px;">
+                <br>
+                <div class="extra_options" id="extra_options">
+                    <ul>
+                        <li class="menu" style="cursor: default;"><h2>Menu:-</h2></li>
+                        <a href="#" style="color: unset; text-decoration: none;"><li  onclick="showtrend()"><img src="smimages/trending.png"><h3 style="margin-left: 10px;">Trending Videos</h3></li> </a>
+                        <li onclick="showHistory()"><img src="smimages/history.png" class="history"><h3> View History</h3> </li>
+                        <li onclick="showPlaylist()"><img src="smimages/playlist.png" style="margin-right: 20px;"><h3>Your Playlist</h3> </li>
+                        <li><img src="smimages/save.png" ><h3 style="margin-left: 10px;">Saved Posts</h3> </li>
+                    </ul>
+                </div>
+                <hr style="height: 5px;">
+                <div class="recent_search" id="recent_search">
+                    <ul>
+                        <li style="cursor: default;"><h2 style="color: black;">Recent Search:-</h2></li>
+                        <li onclick="showLoader()" style="display: none;" id="added_search"><img src="smimages/recentsearch.png"><h3 id="addRecentSearch"></h3> </li>
+                        <li onclick="showLoader()"><img src="smimages/recentsearch.png"><h3>Sumit Sharma</h3> </li>
+                        <li onclick="showLoader()"><img src="smimages/recentsearch.png"><h3>Tech A Intern</h3> </li>
+                        <li onclick="showLoader()"><img src="smimages/recentsearch.png"><h3>Japan Food</h3> </li>
+                        <li onclick="showLoader()"><img src="smimages/recentsearch.png"><h3>Web Development</h3> </li>
+                    </ul>
+                </div>
+                <hr style="height: 5px;">
+                <div class="credits">
+                    <div class="logo_image">
+                        <img src="smimages/logo.png">
+                    </div>
+                    <h3>All Rights Reserved. Use of this site
+                        constitutes acceptance of our terms of policy and Do Not Sell or Share My personal Information.
+                    </h3>
+                </div>
+                <div class="show_more" onclick="showMore()">Show More +</div>
+                <hr style="height: 5px;">
+            </div>
+        </div>
+
+        <!--Centre-side  -->
+        <div class="centre-side" id="centre_side" style="display: inline;"> 
+            <div class="blankspace" id="post1" style="height: 50px; color: red; font-size: xx-large;
+            font-weight: 600; display: none;"><img src="smimages/trending.png" style="height: 35px;"> Trending Video :-</div>
+            <div class="post1">
+                <div class="poster">
+                    <img src="smimages/photo4.jpeg">
+                    <div class="user_name">
+                        <h3>Sarojini Mathur</h3>
+                    </div>
+                    <div class="time_age">
+                        <h4>Updated 24 min ago</h4>
+                    </div>
+                </div>
+                <iframe src="smimages/video1.mp4" class="video"></iframe>
+                <div class="reactions">
+                    <div class="ppl_reacted"><img src="smimages/ppl reacted.jpg"> 935 people liked</div>
+                    <div class="user_reactions">
+                        <button class="heart"><img src="smimages/Heart.png"></button>
+                        <button class="comment"><img src="smimages/comments (2).png"></button>
+                        <button class="share"><img src="smimages/share.png"></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="post1">
+                <div class="poster">
+                    <img src="smimages/photo6.webp">
+                    <div class="user_name">
+                        <h3>Dr. Nalini Mishra</h3>
+                    </div>
+                    <div class="time_age">
+                        <h4>Updated 1 sec ago</h4>
+                    </div>
+                </div>
+                <iframe src="smimages/video5.mp4" class="video"></iframe>
+                <div class="reactions">
+                    <div class="ppl_reacted"><img src="smimages/ppl reacted.jpg"> 1.9k people liked</div>
+                    <div class="user_reactions">
+                        <button class="heart"><img src="smimages/Heart.png"></button>
+                        <button class="comment"><img src="smimages/comments (2).png"></button>
+                        <button class="share"><img src="smimages/share.png"></button>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="post1">
+                <div class="poster">
+                    <img src="smimages/photo3.avif">
+                    <div class="user_name">
+                        <h3>Vaibhav Chopra</h3>
+                    </div>
+                    <div class="time_age">
+                        <h4>Updated 1 min ago ago</h4>
+                    </div>
+                </div>
+                <iframe src="smimages/video3.mp4" class="video"></iframe>
+                <div class="reactions">
+                    <div class="ppl_reacted"><img src="smimages/ppl reacted.jpg"> 135 people liked</div>
+                    <div class="user_reactions">
+                        <button class="heart"><img src="smimages/Heart.png"></button>
+                        <button class="comment"><img src="smimages/comments (2).png"></button>
+                        <button class="share"><img src="smimages/share.png"></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="post1">
+                <div class="poster">
+                    <img src="smimages/photo5.avif">
+                    <div class="user_name">
+                        <h3>Traveller Shalini</h3>
+                    </div>
+                    <div class="time_age">
+                        <h4>Updated 24 min ago</h4>
+                    </div>
+                </div>
+                <iframe src="smimages/video6.mp4" class="video"></iframe>
+                <div class="reactions">
+                    <div class="ppl_reacted"><img src="smimages/ppl reacted.jpg"> 92 people liked</div>
+                    <div class="user_reactions">
+                        <button class="heart"><img src="smimages/Heart.png"></button>
+                        <button class="comment"><img src="smimages/comments (2).png"></button>
+                        <button class="share"><img src="smimages/share.png"></button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="post1">
+                <div class="poster">
+                    <img src="smimages/photo2.avif">
+                    <div class="user_name">
+                        <h3>Surbhi Meena</h3>
+                    </div>
+                    <div class="time_age">
+                        <h4>Updated 14 sec ago</h4>
+                    </div>
+                </div>
+                <iframe src="smimages/video2.mp4" class="video"></iframe>
+                <div class="reactions">
+                    <div class="ppl_reacted"><img src="smimages/ppl reacted.jpg"> 12 people liked</div>
+                    <div class="user_reactions">
+                        <button class="heart"><img src="smimages/Heart.png"></button>
+                        <button class="comment"><img src="smimages/comments (2).png"></button>
+                        <button class="share"><img src="smimages/share.png"></button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="post1">
+                <div class="poster">
+                    <img src="smimages/photo7.png">
+                    <div class="user_name">
+                        <h3>Chef Rana</h3>
+                    </div>
+                    <div class="time_age">
+                        <h4>Updated 24 min ago</h4>
+                    </div>
+                </div>
+                <iframe src="smimages/video7.mp4" class="video"></iframe>
+                <div class="reactions">
+                    <div class="ppl_reacted"><img src="smimages/ppl reacted.jpg"> 935 people liked</div>
+                    <div class="user_reactions">
+                        <button class="heart"><span><img src="smimages/Heart.png"></button>
+                        <button class="comment"><img src="smimages/comments (2).png"></button>
+                        <button class="share"><img src="smimages/share.png"></button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="post1">
+                <div class="poster">
+                    <img src="smimages/photo1.jpg">
+                    <div class="user_name">
+                        <h3>Saurav Mittal</h3>
+                    </div>
+                    <div class="time_age">
+                        <h4>Updated 1 hour ago</h4>
+                    </div>
+                </div>
+                <iframe src="smimages/video4.mp4" class="video"></iframe>
+                <div class="reactions">
+                    <div class="ppl_reacted"><img src="smimages/ppl reacted.jpg"> 927 people liked</div>
+                    <div class="user_reactions">
+                        <button class="heart"><img src="smimages/Heart.png"></button>
+                        <button class="comment"><img src="smimages/comments (2).png"></button>
+                        <button class="share"><img src="smimages/share.png"></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- messages -->
+        <div class="message-side" id="message_side" style="display: none;">
+            <div class="content">
+                <img src="smimages/message.png">
+                <h3>No Messages</h3>
+            </div>
+            <br>
+            <hr style="height: 5px; color: white;">
+            <br>
+            <h1><center>Start Conversation </center></h1>
+            <div class="message1">
+                <div class="unknown_user_image">
+                    <div class="img">
+                        <img src="smimages/photo1.jpg">
+                    </div>
+                    
+                    <h2>Saurav Mittal</h2>
+                    <div class="button">
+                        <button id="message_saurav" onclick="messageSaurav()" style="display: block;">Message</button>
+                        <button class="requested" id="requested_saurav" style="display: none;" onclick="unrequestSaurav()">Requested</button>
+                    </div>
+                    
+                </div>
+
+                <div class="unknown_user_image">
+                    <div class="img">
+                        <img src="smimages/photo2.avif">
+                    </div>
+                    
+                    <h2>Surbhi Meena</h2>
+                    <div class="button">
+                        <button onclick="messageSurbhiMeena()">Message</button>
+                    </div>
+                    
+                </div>
+
+                <div class="unknown_user_image">
+                    <div class="img">
+                        <img src="smimages/photo3.avif">
+                    </div>
+                    
+                    <h2>Vaibhav Chopra</h2>
+                    <div class="button">
+                        <button onclick="messageVaibhavChopra()">Message</button>
+                    </div>
+                    
+                </div>
+
+                <div class="unknown_user_image">
+                    <div class="img">
+                        <img src="smimages/photo4.jpeg">
+                    </div>
+                    
+                    <h2>Sarojini Mathur</h2>
+                    <div class="button">
+                        <button id="message_sarojini" onclick="messageSarojini()" style="display: block;">Message</button>
+                        <button class="requested" id="requested_sarojini" style="display: none;" onclick="unrequestSarojini()">Requested</button>
+                    </div>
+                    
+                </div>
+
+                <div class="unknown_user_image">
+                    <div class="img">
+                        <img src="smimages/photo5.avif">
+                    </div>
+                    
+                    <h2>Traveller Shalini</h2>
+                    <div class="button">
+                        <button id="message_shalini" onclick="messageShalini()" style="display: block;">Message</button>
+                        <button class="requested" id="requested_shalini" style="display: none;" onclick="unrequestShalini()">Requested</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- groups -->
+        <div class="group-side" id="group_side" style="display: none;">
+            <div class="content">
+                <img src="smimages/group.jpg">
+                <h1>No Groups</h1>
+            </div>
+        </div>
+
+        <!-- Surbhi Meena -->
+        <div class="surbhi_dashboard" id="surbhiDashboard" style="display: none;" >
+            <div class="surbhi_meena_header">
+                <div class="unknown_user_image">
+                    <div class="back" style="flex: 0.1;"><img src="smimages/back.png" onclick="showmessage()" style="height: 30px; margin-left: 5px;"></div>
+                    <div class="img">
+                        <img src="smimages/photo2.avif">
+                    </div>                    
+                    <h2>Surbhi Meena</h2>
+                    <div class="button" style="margin-right: 10px;">
+                        <h3 style="text-align: center;">last update 1 min ago</h3>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="sent-msg" id="sent_mag"></div>
+            <div class="sendmsg">
+                <div class="paperclip"><img src="smimages/paperclip.png"> </div>
+                <div class="msg"><input type="text" placeholder="Type Your Message Here" id="actual_msg"></div>
+                <div class="send" onclick="msg_sent()"><img src="smimages/send.webp"></div>
+            </div>
+        </div>
+
+        <!-- vaibhav chopra -->
+        <div class="vaibhav_dashboard" id="vaibhavDashboard" style="display: none;" >
+            <div class="viabhav_chopra_header">
+                <div class="unknown_user_image">
+                    <div class="back" style="flex: 0.1;"><img src="smimages/back.png" onclick="showmessage()" style="height: 30px; margin-left: 5px;"></div>
+                    <div class="img">
+                        <img src="smimages/photo3.avif">
+                    </div>                    
+                    <h2>Vaibhav Chopra</h2>
+                    <div class="button" style="margin-right: 10px;">
+                        <h3 style="text-align: center;">last update 10 min ago</h3>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="sent-msg" id="sent_msg_vaibhav"></div>
+            <div class="sendmsg">
+                <div class="paperclip"><img src="smimages/paperclip.png"> </div>
+                <div class="msg"><input type="text" placeholder="Type Your Message Here" id="actual_msg_vaibhav"></div>
+                <div class="send" onclick="msg_sent_vaibhav()"><img src="smimages/send.webp"></div>
+            </div>
+        </div>
+
+        <!-- history -->
+        <div class="history-side" id="history-side" style="display: none;">
+            <div class="content" style="width: 100%;">
+                <div class="recent_search1">
+                    <ul>
+                        <li style="cursor: default;"><h2 style="color: black;">Recent Search:-</h2></li>
+                        <li onclick="showLoader()"><img src="smimages/recentsearch.png"><h3>Sumit Sharma</h3> </li>
+                        <li onclick="showLoader()"><img src="smimages/recentsearch.png"><h3>Tech A Intern</h3> </li>
+                        <li onclick="showLoader()"><img src="smimages/recentsearch.png"><h3>Japan Food</h3> </li>
+                        <li onclick="showLoader()"><img src="smimages/recentsearch.png"><h3>Web Development</h3> </li>
+                        <li onclick="showLoader()"><img src="smimages/recentsearch.png"><h3>Funny Video</h3> </li>
+                        <li onclick="showLoader()"><img src="smimages/recentsearch.png"><h3>Taarat Mehta Ka Ooltah Chashma</h3> </li>
+                        <li onclick="showLoader()"><img src="smimages/recentsearch.png"><h3>Sourav Joshi</h3> </li>
+                        <li onclick="showLoader()"><img src="smimages/recentsearch.png"><h3>Gaming</h3> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Playlist -->
+        <div class="playlist-side" id="playlist_side" style="display: none;">
+            <div class="content">
+                <img src="smimages/playlist.png">
+                <h1>Create Your Own Playlist</h1>
+            </div>
+        </div>
+
+        <!-- loading -->
+        <div class="loading-side" id="loading_side" style="display: none;">
+            <div class="loader"></div>
+            <h1>Loading...</h1>
+        </div>
+
+    </div>
+
+     <script text="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profilescript.css">
+</head>
+<body>
+    <div class="maincontent">
+        <div class="centre-side">
+            <div class="headImage" id="headImage">
+                <img src="smimages/portfolioheadimg.jpeg" id="headimage">
+            </div>
+            <div class="name">
+                <a href="index.html">
+                    <img src="smimages/passportphoto.png">
+                </a>
+                <div class="user_name">
+                    <h1>Nobita Sharma</h1>
+                    <h2>Content Creator</h2>
+                </div>
+            </div>
+
+            <div class="bio" onclick="showbio()">
+                <h1>
+                    <img src="smimages/edit.png"> Edit Bio
+                </h1>
+            </div>
+            <div class="edit_bio" id="edit_bio" style="display: none;">
+                <input type="textarea" placeholder="Hii Everyone. I'm Nobita Sharma, an conent creator and a wildlife photographer."class="enterbio"><img src="smimages/send.webp">
+            </div>
+
+            <div class="yourpost" onclick="showpost()">
+                <h1>
+                    <img src="smimages/yourpost.png"> Your Post
+                </h1>
+            </div>
+            <div class="posted_items" id="posted_items" style="display: none;">
+                <div class="post1">
+                    <img src="smimages/yourpost1.jpeg">
+                </div>
+
+                <div class="post1">
+                    <img src="smimages/yourpost2.jpeg">
+                </div>
+
+                <div class="post1">
+                    <img src="smimages/yourpost3.jpeg">
+                </div>
+
+                <div class="post1">
+                    <img src="smimages/yourpost4.jpeg">
+                </div>
+
+                <div class="post1">
+                    <img src="smimages/yourpost5.jpeg">
+                </div>
+
+                <div class="post1">
+                    <img src="smimages/yourpost6.jpg">
+                </div>
+            </div>
+
+            <div class="followers" onclick="showfollowers()">
+                <h1>
+                    <img src="smimages/followers.png"> Followers (6)
+                </h1>
+            </div>
+            <div class="followers_list" id="followers_list" style="display: none;">
+                <ul>
+                    <li><img src="smimages/follower1.jpg"><h2>Nita Akhilesh</h2><img src="smimages/followers.png" class="folower_png"></li>
+                    <li><img src="smimages/follower4.jpg"><h2>Nirankush Agarwal</h2><img src="smimages/followers.png" class="folower_png"></li>
+                    <li><img src="smimages/follower6.jpg"><h2>Mohit Kumar</h2><img src="smimages/followers.png" class="folower_png"></li>
+                    <li><img src="smimages/follower2.jpg"><h2>Ankita Goyal</h2><img src="smimages/followers.png" class="folower_png"></li>
+                    <li><img src="smimages/follower5.jpg"><h2>Rohan Kumar</h2><img src="smimages/followers.png" class="folower_png"></li>
+                    <li><img src="smimages/follower3.jpg"><h2>Roshini Saini</h2><img src="smimages/followers.png" class="folower_png"></li>
+                </ul>
+            </div>
+
+            <div class="followers" onclick="showfollowing()">
+                <h1>
+                    <img src="smimages/following.png"> Following (4)
+                </h1>
+            </div>
+            <div class="followers_list" id="following_list" style="display: none;">
+                <ul>
+                    <li><img src="smimages/follower1.jpg"><h2>Nita Akhilesh</h2><img src="smimages/following.png" class="folower_png"></li>
+                    <li><img src="smimages/follower4.jpg"><h2>Nirankush Agarwal</h2><img src="smimages/following.png" class="folower_png"></li>
+                    <li><img src="smimages/follower2.jpg"><h2>Ankita Goyal</h2><img src="smimages/following.png" class="folower_png"></li>
+                    <li><img src="smimages/follower5.jpg"><h2>Rohan Kumar</h2><img src="smimages/following.png" class="folower_png"></li>
+                </ul>
+            </div>
+
+            <div class="copyright">
+                <div class="logo">
+                    <img src="smimages/logo.png">
+                </div>
+                <div class="type_copyright">
+                    <h2>All Rights Reserved. Use of this site
+                        constitutes acceptance of our terms of policy and Do Not Sell or Share My personal Information.
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="left-side">
+            <h2>People You May Also Know</h2>
+            <div class="followers_list">
+                <ul>
+                    <li style="cursor: default;"><img src="smimages/follower3.jpg"><h2>Roshini Saini</h2></li>
+                    <li style="cursor: default;"><img src="smimages/photo6.webp"><h2>Dr. Nalini Mishra</h2></li>
+                    <li style="cursor: default;"><img src="smimages/photo5.avif"><h2>Traveller Shalini</h2></li>
+                    <li style="cursor: default;"><img src="smimages/photo7.png"><h2>Chef Rana</h2></li>
+                    <li style="cursor: default;"><img src="smimages/photo2.avif"><h2>Surbhi Meena</h2></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script text="text/jsvascript" src="profilescript.js"></script>
+</body>
+</html>
